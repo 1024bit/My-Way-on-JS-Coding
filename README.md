@@ -2,7 +2,7 @@ JS编程之路
 ===
 
 >记录编写JS过程中记忆深刻的问题或痛彻后的感悟，问题或大或小。
-大致是从2009年开始，遗憾的是每条记录没有标明具体时间点，从明天起，带上时间，做一个幸福的人。
+>大致是从2009年开始，遗憾的是每条记录没有标明具体时间点，从明天起，带上时间，做一个幸福的人。
 
 
 1. JS 不支持数组自动定义，eg. var arr = []; arr[0][] 将抛出未定义错误
@@ -59,11 +59,10 @@ JS编程之路
     2. 运行时与编译
     
 19. o instanceof f: 
-  <code>
-    1. if f.prototype is not one of the values in the prototype chain of o, then o is not an instance of f.
-    2. instanceof considers the "superclasses".
-    3. 关键词: "原型对象"
-  </code>  
+    >if f.prototype is not one of the values in the prototype chain of o, then o is not an instance of f.
+    >instanceof considers the "superclasses".
+    >关键词: "原型对象"
+
 20. 闭包对应函数
 
 21. JS中, 对象与原型对象为同一事物
