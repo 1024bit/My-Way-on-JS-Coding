@@ -49,26 +49,26 @@ JS编程之路
 15. 不去追求细节而只关注单元
 
 16. 如何在链式调用与过程调用中选择? 可参照以下两点: 
-    1. 优先考虑链式调用
-    2. 链式调用与过程调用应可轻易转换且无重复代码
+    >1. 优先考虑链式调用
+    >2. 链式调用与过程调用应可轻易转换且无重复代码
     
 17. 遍历数组时, 若删除数组元素, 键不会被重置
 
 18. var fun = function() {} 与 function fun() {} 的区别: 
-    1. 匿名与实名
-    2. 运行时与编译
+    >- 匿名与实名
+    >- 运行时与编译
     
 19. o instanceof f: 
-    >if f.prototype is not one of the values in the prototype chain of o, then o is not an instance of f.
-    >instanceof considers the "superclasses".
-    >关键词: "原型对象"
+    >- if f.prototype is not one of the values in the prototype chain of o, then o is not an instance of f.
+    >- instanceof considers the "superclasses".
+    >- 关键词: "原型对象"
 
 20. 闭包对应函数
 
 21. JS中, 对象与原型对象为同一事物
 
 22. constructor: 
-    1. 第三方可由此访问到类的prototype属性
+    >- 第三方可由此访问到类的prototype属性
     
 23. Array.prototype.concat方法不强制转换"类数组"
 
