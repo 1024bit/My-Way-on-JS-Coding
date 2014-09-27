@@ -12,7 +12,7 @@ JS编程之路
 
 2. JS 数组长度的统计依据数字索引的最大值, 非数字索引元素不记在内
 
-3. JS 中, `Array(4)` 将构造长度为`4`的数组; PHP 中, 将构造长度为1的数组
+3. JS 中, `Array(4)` 将构造长度为`4`的数组; PHP 中, 将构造长度为`1`的数组
 
 4. JS 中, `new` 操作符可省略的情况仅限于内置对象的实例化; AS 中, 自定义对象亦可省略
 
@@ -62,8 +62,8 @@ JS编程之路
     >- 运行时与编译
     
 19. `o instanceof f`: 
-    >- if f.prototype is not one of the values in the prototype chain of o, then o is not an instance of f.
-    >- instanceof considers the "superclasses".
+    >- `if f.prototype is not one of the values in the prototype chain of o, then o is not an instance of f`.
+    >- `instanceof considers the "superclasses"`.
     >- 关键词: "原型对象"
 
 20. 闭包对应函数
