@@ -2,14 +2,17 @@ JS编程之路
 ===
 
 >记录编写JS过程中记忆深刻的问题或痛彻后的感悟，问题或大或小。
->大致是从2009年开始，遗憾的是每条记录没有标明具体时间点，从明天起，带上时间，做一个幸福的人。
+
+>大致是从2009年开始，遗憾的是每条记录没有标明具体时间点。
+
+>从明天起，带上时间，做一个幸福的人。
 
 
-1. JS 不支持数组自动定义，eg. var arr = []; arr[0][] 将抛出未定义错误
+1. JS 不支持数组自动定义，eg. `var arr = []; arr[0][]` 将抛出未定义错误
 
 2. JS 数组长度的统计依据数字索引的最大值, 非数字索引元素不记在内
 
-3. JS 中, Array(4) 将构造长度为4的数组; PHP 中, 将构造长度为1的数组
+3. JS 中, `Array(4)` 将构造长度为4的数组; PHP 中, 将构造长度为1的数组
 
 4. JS 中, new 操作符可省略的情况仅限于内置对象的实例化; AS 中, 自定义对象亦可省略
 
@@ -21,12 +24,12 @@ JS编程之路
 
 8. 以绑定的角度去审视this关键字指向的对象, 就很简单了
 
-9. var arr = []; var s = arr; s为指向arr的引用
+9. `var arr = []; var s = arr;` s为指向arr的引用
 
-10. this仅适用于其所处的function域
+10. `this`仅适用于其所处的`function`域
 
 11. 重写某函数可用如下模板: 
-  <pre><code>
+  <pre>
 	Function.prototype.override = function() {
 		var fn = this, 
 			args = Array.slice(arguments);
@@ -38,7 +41,7 @@ JS编程之路
 	fn = function(a, b, c, d, e);
 	var f = fn.override(1, 2, 3);
 	f(4);
-  </code></pre>
+  </pre>
     
 12. JS中, 引用对应更新，而非赋值
 
@@ -49,16 +52,16 @@ JS编程之路
 15. 不去追求细节而只关注单元
 
 16. 如何在链式调用与过程调用中选择? 可参照以下两点: 
-    >1. 优先考虑链式调用
-    >2. 链式调用与过程调用应可轻易转换且无重复代码
+    >- 优先考虑链式调用
+    >- 链式调用与过程调用应可轻易转换且无重复代码
     
 17. 遍历数组时, 若删除数组元素, 键不会被重置
 
-18. var fun = function() {} 与 function fun() {} 的区别: 
+18. `var fun = function() {} 与 function fun() {}` 的区别: 
     >- 匿名与实名
     >- 运行时与编译
     
-19. o instanceof f: 
+19. `o instanceof f`: 
     >- if f.prototype is not one of the values in the prototype chain of o, then o is not an instance of f.
     >- instanceof considers the "superclasses".
     >- 关键词: "原型对象"
@@ -67,10 +70,10 @@ JS编程之路
 
 21. JS中, 对象与原型对象为同一事物
 
-22. constructor: 
-    >- 第三方可由此访问到类的prototype属性
+22. `constructor`: 
+    >- 第三方可由此访问到类的`prototype`属性
     
-23. Array.prototype.concat方法不强制转换"类数组"
+23. `Array.prototype.concat`方法不强制转换"类数组"
 
 24. 大胆可行的想法与上乘优质的产出成正比
 
@@ -78,17 +81,17 @@ JS编程之路
 
 26. 计算机永远不会欺骗你
 
-27. Sequentially展示了变体函数的编程方法: 元函数 + 规则 = 变体函数
+27. `Sequentially`展示了变体函数的编程方法: 元函数 + 规则 = 变体函数
 
-28. MVar提供了在异步环境中同步数据流的方法
+28. `MVar`提供了在异步环境中同步数据流的方法
 
 29. code path count
 
-30. 使用do while循环的技巧: 在do里面明确退出
+30. 使用`do while`循环的技巧: 在`do`里面明确退出
 
 31. 迭代三要素: 结果, 最小单元, 条件; 若操作引用, 则无需返回结果
 
-32. PHP中无闭包, 可通过static到达相同效果 
+32. PHP中无闭包, 可通过`static`到达相同效果 
 
 33. 不要"绞尽脑汁"的时候去创作, 选择正确的点很重要
 
@@ -100,9 +103,9 @@ JS编程之路
 
 38. 避免代码重复现象的唯一方法是持久重构
 
-39. 适配模式四步曲: 执行接口(api), 验证(valid), 构造对象(extend), 实例化(init)
+39. 适配模式四步曲: 执行接口(`api`), 验证(`valid`), 构造对象(`extend`), 实例化(`init`)
 
-40. get set使用技巧: 被操作的属性链接至内部实质保留值的对应属性
+40. `get set`使用技巧: 被操作的属性链接至内部实质保留值的对应属性
 
 41. 适度性与差异性: 程序设计中, 你应当总是关注最核心的要传递给用户的"价值", 而非过度地完善次要功能; 
 比如, 同一个函数在不同的环境, 其提供的功能可能存在差异性, 这是完全合理的
