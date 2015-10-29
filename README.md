@@ -119,3 +119,5 @@ JS编程之路
 46. 违背常理的现象一定是假象(`2014-09`)
 
 47. 区分循环与迭代, 迭代的显著特征是单元之间有依赖关系
+
+48. Write your code in generators, promises, or unnested callbacks and you'll be fine. (`2015-10-29`)
